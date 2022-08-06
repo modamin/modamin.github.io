@@ -4,12 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am a Cloud Solution Architect. I currently work at Microsoft. This blog contains some thoughts and notes about Cloud, Code, and Data. 
 
-### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
-
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+Opinions my own and not my employer's.
