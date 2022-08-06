@@ -3,9 +3,8 @@ layout: post
 title: Group Based Access Control for Azure Synapse Spark Pools
 ---
 
-![image.png]({{ site.baseurl }}/images/20220806/1.png)
-
 This article describes how to give different groups access to different spark pools within the same workspace.
+
 
 The basic idea is to have
 
