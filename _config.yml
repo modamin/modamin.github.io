@@ -6,7 +6,7 @@
 name: Mohamed Amin
 
 # Short bio or description (displayed in the header)
-description: Cloud Solution Architect
+description: Cloud Architecture
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: ""
@@ -65,3 +65,4 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  
