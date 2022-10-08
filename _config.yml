@@ -18,11 +18,12 @@ avatar: ""
 # Includes an icon in the footer for each username you enter
 footer-links:
   github: aminsrc
+  linkedin: mhamin
   rss: # just type anything here for a working RSS icon
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: "https://mamin.dev"
+url: "https://amin.tech"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
