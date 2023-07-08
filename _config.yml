@@ -6,7 +6,7 @@
 name: Mohamed Amin
 
 # Short bio or description (displayed in the header)
-description: Cloud Solution Architect - Data & Analytics
+description: Code, Math, and Data
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: ""
@@ -17,8 +17,8 @@ avatar: ""
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  github: aminsrc
-  linkedin: mhamin
+  github: modamin
+  # linkedin: modamin
   rss: yes_please 
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
