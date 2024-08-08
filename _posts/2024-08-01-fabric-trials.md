@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Microsoft Fabric Trials
+excerpt: Microsoft Fabric enables users in your organization to start a free trial.
 ---
 
 Microsoft Fabric enables users in your organization to start a free trial. The free trial is in the form of an F64 trial capacity that gets provisioned in your tenant. Each user starting a fabric trial will create a new fabric trial capacity. The capacity will stay for 60 days and will then be deprovisioned. Artifacts created in this capacity will be deleted.
