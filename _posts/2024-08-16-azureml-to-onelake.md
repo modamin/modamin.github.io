@@ -16,7 +16,7 @@ It uses Python and Notebooks to read data from OneLake.
 
 ![alt text](../images/2024-08-16-azureml-to-onelake/image-1.png)
 
-3. You can get <myWorkspace> and <myLakehouse> from the Lakehouse properties> URL. The URL is formatted as follows: https://onelake.dfs.fabric.microsoft.com/<myWorkspace>/<myLakehouse>/Files
+3. You can get "myWorkspace" and "myLakeHose" from the Lakehouse properties URL. The URL is formatted as follows: https://onelake.dfs.fabric.microsoft.com/myWorkspace/myLakehouse/Files
 
 ![alt text](../images/2024-08-16-azureml-to-onelake/image-2.png)
 ![alt text](../images/2024-08-16-azureml-to-onelake/image-3.png)                                        
