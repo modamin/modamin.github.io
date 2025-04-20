@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Microsoft Integration Architecture
+title: Microsoft Fabric Integration Architecture
 excerpt: Integration points between Microsoft Fabric, Azure, Power Apps, and on-premises data sources.
 ---
 
