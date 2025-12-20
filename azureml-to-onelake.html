@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connecting Azure Machine Learning to Fabric OneLake - Mohamed Amin</title>
+    <meta name="description" content="You can use Python and Notebooks to access OneLake data from Azure ML.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">Mohamed Amin</a></h1>
+            <nav>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="post-content">
+            <a href="index.html" class="back-link">← Back to home</a>
+
+            <h1>Connecting Azure Machine Learning to Fabric OneLake</h1>
+            <div class="post-meta">
+                <time datetime="2024-08-16">August 16, 2024</time>
+            </div>
+
+            <p>Here is a workaround to access data from OneLake in Azure ML.</p>
+
+            <p>It uses Python and Notebooks to read data from OneLake.</p>
+
+            <ol>
+                <li>
+                    Create a compute instance
+                    <img src="images/2024-08-16-azureml-to-onelake/image.png" alt="Create a compute instance">
+                </li>
+
+                <li>
+                    From Notebooks create a new .py file or .ipynb. Use the following code: <a href="https://learn.microsoft.com/en-us/fabric/onelake/onelake-access-python#sample" target="_blank" rel="noopener noreferrer">https://learn.microsoft.com/en-us/fabric/onelake/onelake-access-python#sample</a>
+                    <img src="images/2024-08-16-azureml-to-onelake/image-1.png" alt="Create notebook file">
+                </li>
+
+                <li>
+                    You can get "myWorkspace" and "myLakeHose" from the Lakehouse properties URL. The URL is formatted as follows: https://onelake.dfs.fabric.microsoft.com/myWorkspace/myLakehouse/Files
+                    <img src="images/2024-08-16-azureml-to-onelake/image-2.png" alt="Lakehouse properties">
+                    <img src="images/2024-08-16-azureml-to-onelake/image-3.png" alt="Lakehouse URL format">
+                </li>
+
+                <li>
+                    To run the code in Notebooks, open a terminal and attach it to your compute.
+                    <img src="images/2024-08-16-azureml-to-onelake/image-4.png" alt="Open terminal">
+                </li>
+
+                <li>In the command line. install Azure storage and Azure identity packages:<code>$pip install azure-storage-file-datalake azure-identity</code></li>
+
+                <li>Navigate to the location of your Python file: For example: <code>$cd ~/cloudfiles/code/Users/admin</code></li>
+
+                <li>The code uses Default credentials of the logged in user from the command line. Login using using: <code>$az login --identity</code></li>
+
+                <li>Make sure the logged in user has access to the files in the Fabric Lakehouse</li>
+
+                <li>Run the Python file to list the files in the OneLake/Files directory: <code>$python ./onelake.py</code></li>
+
+                <li>
+                    If it succeeds, you should see the files listed:
+                    <img src="images/2024-08-16-azureml-to-onelake/image-5.png" alt="Files listed successfully">
+                </li>
+            </ol>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/modamin" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/modamin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+            <p>&copy; 2025 Mohamed Amin</p>
+        </div>
+    </footer>
+</body>
+</html>
