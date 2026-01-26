@@ -7,7 +7,7 @@ categories: fabric
 This article describes the integration points between Microsoft Fabric and other services such as on-premises data sources, Power Apps, Azure DevOps and Azure services and data sources.
 
 
-![alt text](/_posts/assets/2026-01-18-fabric-integration-architecture/image-4.png)
+![alt text](/assets/2026-01-18-fabric-integration-architecture/image-4.png)
 
 
 ### Integration points
