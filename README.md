@@ -1,1 +1,0 @@
-Personal website based on the Jekyll Minima theme.
