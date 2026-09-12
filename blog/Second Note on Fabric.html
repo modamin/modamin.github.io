@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Mohamed Amin" name="author"/>
-<title>Blog | Mohamed Amin</title>
-<script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Mohamed Amin">
+  <title>Second Note on Fabric | Mohamed Amin</title>
+  
+  <script>
     (() => {
       let theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
       try {
@@ -16,10 +16,10 @@
       document.documentElement.dataset.theme = theme;
     })();
   </script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Schibsted+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<style>:root {
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Schibsted+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>:root {
   color-scheme: light;
   --bg: #ffffff;
   --bg-soft: #f4f5f5;
@@ -214,24 +214,50 @@ footer a:hover, .post-meta a:hover, .monogram:hover { color: var(--accent); }
 }</style>
 </head>
 <body>
-<div class="wrap">
-<nav aria-label="Site navigation" class="topbar">
-<a class="monogram" href="index.html">Mohamed Amin</a>
-<button aria-label="Toggle dark mode" aria-pressed="false" class="toggle" hidden="" title="Toggle dark mode" type="button">
-<span aria-hidden="true" class="theme-icon"></span>
-</button>
-</nav>
-<main><header class="post-header blog-header"><div class="eyebrow">Writing</div><h1>Blog</h1><p class="lede">Notes on data engineering, architecture, and reliable systems.</p></header><ul class="blog-list"><li class="blog-item"><h2><a href="blog/Microsoft%20Fabric%20Integration%20Architecture.html">Microsoft Fabric Integration Architecture</a></h2></li><li class="blog-item"><h2><a href="blog/Second%20Note%20on%20Fabric.html">Second Note on Fabric</a></h2></li></ul></main>
-<footer>
-<span>© 2026 Mohamed Amin</span>
-<nav aria-label="Social links">
-<a href="https://www.linkedin.com/in/modamin/">LinkedIn</a>
-<a href="https://www.github.com/modamin">GitHub</a>
-<a href="blog.html">Blog</a>
-</nav>
-</footer>
-</div>
-<script>
+  <div class="wrap">
+    <nav class="topbar" aria-label="Site navigation">
+      <a class="monogram" href="../index.html">Mohamed Amin</a>
+      <button class="toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode" aria-pressed="false" hidden>
+        <span class="theme-icon" aria-hidden="true"></span>
+      </button>
+    </nav>
+    <main>
+      <article>
+        <nav class="post-navigation" aria-label="Blog navigation">
+          <a href="../blog.html">All posts</a>
+        </nav>
+        <header class="post-header">
+          <div class="eyebrow">Notes</div>
+          <h1>Second Note on Fabric</h1>
+          
+          <div class="post-meta">
+            <a rel="author" href="../index.html">Mohamed Amin</a>
+            
+          </div>
+        </header>
+        <div class="post-content"><p>This article describes the integration points between Microsoft Fabric and other services such as on-premises data sources, Power Apps, Azure DevOps and Azure services and data sources.</p>
+<p><img alt="alt text" src="https://substackcdn.com/image/fetch/$s_!A9CB!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5beb19a0-eb00-44d3-b26d-70830fc79531_2188x1200.png" title="alt text"/></p>
+<h3>Integration points</h3>
+<ol>
+<li>
+<p>Users, developers, and admins are authenticated through Microsoft Entra. At the time of authentication, an Entra Conditional Access Policies are applied. These policies include Multi-Factor Authentication (MFA) policies, device locations, IP range, and other signals.</p>
+</li>
+<li>
+<p>On-premises networks hosting desktop tools such as Power BI desktop, SSMS, and VS Code will require outbound port whitelisting to respective Fabric endpoints. These can be found here and here. Access to on-premises data sources is done using the On-Premises Data Gateway (OPDG). The OPDG is a Microsoft 1st party tool that facilitates communication with private on-premises data sources through outbound only communication. The OPDG is an executable that is installed on Windows server or VM. OPDG requires outbound whitelisting of certain ports.</p>
+</li>
+</ol></div>
+      </article>
+    </main>
+    <footer>
+      <span>&copy; 2026 Mohamed Amin</span>
+      <nav aria-label="Social links">
+        <a href="https://www.linkedin.com/in/modamin/">LinkedIn</a>
+        <a href="https://www.github.com/modamin">GitHub</a>
+        <a href="../blog.html">Blog</a>
+      </nav>
+    </footer>
+  </div>
+  <script>
     (() => {
       const root = document.documentElement;
       const button = document.querySelector('.toggle');
