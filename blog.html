@@ -72,6 +72,23 @@ a:hover { text-decoration-thickness: 2px; }
   color: var(--muted);
   text-decoration: none;
 }
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 22px;
+}
+.nav-links a {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+  text-decoration: none;
+}
+.nav-links a:hover { color: var(--accent); }
+.home-header h1, .blog-header h1 { margin-bottom: 14px; }
+.home-header .eyebrow, .blog-header .eyebrow { margin-bottom: 0; }
 .toggle {
   width: 38px;
   height: 38px;
@@ -216,19 +233,19 @@ footer a:hover, .post-meta a:hover, .monogram:hover { color: var(--accent); }
 <body>
 <div class="wrap">
 <nav aria-label="Site navigation" class="topbar">
-<a class="monogram" href="index.html">Mohamed Amin</a>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="blog.html">Blog</a>
+<a href="https://www.linkedin.com/in/modamin/">LinkedIn</a>
+<a href="https://www.github.com/modamin">GitHub</a>
+</div>
 <button aria-label="Toggle dark mode" aria-pressed="false" class="toggle" hidden="" title="Toggle dark mode" type="button">
 <span aria-hidden="true" class="theme-icon"></span>
 </button>
 </nav>
-<main><header class="post-header blog-header"><div class="eyebrow">Writing</div><h1>Blog</h1><p class="lede">Notes on data engineering, architecture, and reliable systems.</p></header><ul class="blog-list"><li class="blog-item"><h2><a href="blog/Microsoft%20Fabric%20Integration%20Architecture.html">Microsoft Fabric Integration Architecture</a></h2></li><li class="blog-item"><h2><a href="blog/Second%20Note%20on%20Fabric.html">Second Note on Fabric</a></h2></li></ul></main>
+<main><header class="post-header blog-header"><h1>Blog</h1><div class="eyebrow">Writing</div></header><ul class="blog-list"><li class="blog-item"><h2><a href="blog/Microsoft%20Fabric%20Integration%20Architecture.html">Microsoft Fabric Integration Architecture</a></h2></li><li class="blog-item"><h2><a href="blog/Second%20Note%20on%20Fabric.html">Second Note on Fabric</a></h2></li></ul></main>
 <footer>
 <span>© 2026 Mohamed Amin</span>
-<nav aria-label="Social links">
-<a href="https://www.linkedin.com/in/modamin/">LinkedIn</a>
-<a href="https://www.github.com/modamin">GitHub</a>
-<a href="blog.html">Blog</a>
-</nav>
 </footer>
 </div>
 <script>
