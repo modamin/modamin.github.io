@@ -1,7 +1,10 @@
-I'm a data architect & consultant with over 15 years of experience spanning software engineering, data engineering, and data architecture. I help organizations work out what their data should actually do for the business, then design and build the secure, well-governed systems that get them there.
+I'm a Data Solutions Architect. I build enterprise data solutions that turn raw data into trusted, valuable assets. I work with teams to architect and build cloud data solutions in net-new and existing environments. I also train professionals on the engineering practices needed to run an efficient, reliable, and secure data platform. 
 
-I build enterprise data platforms from the ground up, migrate legacy and on-prem data warehouses into the cloud, and stand up self-serve analytics that open data up across the broader organization. I work hands-on across data engineering, data architecture, and data governance, and design for the strict security and compliance that regulated environments demand. I also enable the teams behind these platforms, training data professionals to run and build on them themselves.
+This site contains thoughts, notes, opinions, and deep dives from the fascinating world of data!
 
+All writing on this site is my own, and does not represent the opinions of my employer. 
 
-- [Sample Blog Post](/posts/post)
-- [Sample Post 2](posts/post-2.md)
+You can find me on [LinkedIn](https://linkedin.com/in/modamin) and [GitHub](https://github.com/modamin)
+
+### Posts
+- [Microsoft Fabric Integration](posts/ms-fabric-integration.md)
