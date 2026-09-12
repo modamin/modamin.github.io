@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Mohamed Amin" name="author"/>
-<title>Mohamed Amin | Data Solutions Architect</title>
-<script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Mohamed Amin">
+  <title>Microsoft Fabric Integration Architecture | Mohamed Amin</title>
+  
+  <script>
     (() => {
       let theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
       try {
@@ -16,10 +16,10 @@
       document.documentElement.dataset.theme = theme;
     })();
   </script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Schibsted+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<style>:root {
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Schibsted+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>:root {
   color-scheme: light;
   --bg: #ffffff;
   --bg-soft: #f4f5f5;
@@ -214,96 +214,70 @@ footer a:hover, .post-meta a:hover, .monogram:hover { color: var(--accent); }
 }</style>
 </head>
 <body>
-<div class="wrap">
-<nav aria-label="Site navigation" class="topbar">
-<a class="monogram" href="index.html">Mohamed Amin</a>
-<button aria-label="Toggle dark mode" aria-pressed="false" class="toggle" hidden="" title="Toggle dark mode" type="button">
-<span aria-hidden="true" class="theme-icon"></span>
-</button>
-</nav>
-<main><header class="home-header">
-<div class="eyebrow">Data Solutions Architect</div>
-<h1>Mohamed Amin</h1>
-<p class="lede">Architecting Enterprise Data Platforms.</p>
-<nav aria-label="Profile links" class="home-links">
-<a href="https://www.linkedin.com/in/modamin/">LinkedIn</a>
-<a href="https://www.github.com/modamin">GitHub</a>
-<a href="blog.html">Blog</a>
-</nav>
-</header>
-<section aria-labelledby="about-heading" class="home-section">
-<h2 class="section-label" id="about-heading">About</h2>
-<p>I'm a data architect &amp; consultant with over 15 years of experience spanning
-    software engineering, data engineering, and data architecture. I help organizations
-    work out what their data should actually do for the business, then design and
-    build the secure, well-governed systems that get them there.</p>
-<p>I build enterprise data platforms from the ground up, migrate legacy and on-prem
-    data warehouses into the cloud, and stand up self-serve analytics that open
-    data up across the broader organization. I work hands-on across data engineering,
-    data architecture, and data governance, and design for the strict security and
-    compliance that regulated environments demand. I also enable the teams behind
-    these platforms, training data professionals to run and build on them themselves.</p>
-</section>
-<section aria-labelledby="experience-heading" class="home-section">
-<h2 class="section-label" id="experience-heading">Experience</h2>
-<div class="experience-item">
-<div class="role-head">
-<h3>Senior Data Solutions Architect <span>Microsoft Canada</span></h3>
-<span class="role-date">2021 – Now</span>
-</div>
-<p>Deliver professional services to Microsoft Fabric customers as their lead
-      technical advisor. I run discovery and high-impact proofs of concept, shape long-term
-      platform roadmaps, and guide projects end to end, from initial workshops through
-      architecture, migration, and delivery, working closely with lead architects and
-      senior leadership in highly regulated environments.</p>
-</div>
-<div class="experience-item">
-<div class="role-head">
-<h3>Senior Data Engineer <span>Government of Canada</span></h3>
-<span class="role-date">2019 – 2021</span>
-</div>
-<p>Built a next-generation data platform on Azure Databricks serving thousands of
-      employees. Architected the full stack (networking, identity, high availability,
-      CI/CD) and took it through security accreditation at the PBMM level (ITSG-33 /
-      NIST 800-53).</p>
-</div>
-<div class="experience-item">
-<div class="role-head">
-<h3>Software Engineer <span>Huawei Technologies Canada</span></h3>
-<span class="role-date">2016 – 2019</span>
-</div>
-<p>Built zero-to-one research prototypes in network automation, intent-based
-      networking, and SD-WAN, several of which fed into commercial products. One delivered
-      operational intelligence through a real-time streaming application.</p>
-</div>
-<div class="experience-item">
-<div class="role-head">
-<h3>Graduate Researcher <span>Carleton University</span></h3>
-<span class="role-date">2015 – 2016</span>
-</div>
-<p>Applied data science research using NLP to study business ecosystems, building
-      end-to-end Python pipelines for crawling, preprocessing, modeling, and visualization.</p>
-</div>
-<div class="experience-item">
-<div class="role-head">
-<h3>Software Developer <span>Nokia</span></h3>
-<span class="role-date">2011 – 2015</span>
-</div>
-<p>Delivered telecom policy-control (PCRF) solutions for Tier-1 and Tier-2
-      carriers, covering interoperability, upgrades, and solution design. Also built
-      production features in Java EE, including an early prototype of a smart plan builder.</p>
-</div>
-</section></main>
-<footer>
-<span>© 2026 Mohamed Amin</span>
-<nav aria-label="Social links">
-<a href="https://www.linkedin.com/in/modamin/">LinkedIn</a>
-<a href="https://www.github.com/modamin">GitHub</a>
-<a href="blog.html">Blog</a>
-</nav>
-</footer>
-</div>
-<script>
+  <div class="wrap">
+    <nav class="topbar" aria-label="Site navigation">
+      <a class="monogram" href="../index.html">Mohamed Amin</a>
+      <button class="toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode" aria-pressed="false" hidden>
+        <span class="theme-icon" aria-hidden="true"></span>
+      </button>
+    </nav>
+    <main>
+      <article>
+        <nav class="post-navigation" aria-label="Blog navigation">
+          <a href="../blog.html">All posts</a>
+        </nav>
+        <header class="post-header">
+          <div class="eyebrow">Notes</div>
+          <h1>Microsoft Fabric Integration Architecture</h1>
+          
+          <div class="post-meta">
+            <a rel="author" href="../index.html">Mohamed Amin</a>
+            
+          </div>
+        </header>
+        <div class="post-content"><p>This article describes the integration points between Microsoft Fabric and other services such as on-premises data sources, Power Apps, Azure DevOps and Azure services and data sources.</p>
+<p>[</p>
+<p><img alt="alt text" src="https://substackcdn.com/image/fetch/$s_!A9CB!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5beb19a0-eb00-44d3-b26d-70830fc79531_2188x1200.png" title="alt text"/></p>
+<h3>Integration points</h3>
+<ol>
+<li>
+<p>Users, developers, and admins are authenticated through Microsoft Entra. At the time of authentication, an Entra Conditional Access Policies are applied. These policies include Multi-Factor Authentication (MFA) policies, device locations, IP range, and other signals.</p>
+</li>
+<li>
+<p>On-premises networks hosting desktop tools such as Power BI desktop, SSMS, and VS Code will require outbound port whitelisting to respective Fabric endpoints. These can be found here and here. Access to on-premises data sources is done using the On-Premises Data Gateway (OPDG). The OPDG is a Microsoft 1st party tool that facilitates communication with private on-premises data sources through outbound only communication. The OPDG is an executable that is installed on Windows server or VM. OPDG requires outbound whitelisting of certain ports.</p>
+</li>
+<li>
+<p>Microsoft Purview can connect to Fabric using Azure Runtime, Self-hosted Integration Runtime or Managed VNet Integration Runtime. The choice depends on whether public access is allowed or denied in Fabric. More information on the scenarios can be found here. Communications between Microsoft Purview and the Microsoft Fabric tenant happens over the Microsoft Network backbone.</p>
+</li>
+<li>
+<p>Power Platform Dataverse: privately communicates to Microsoft Fabric through the link to Microsoft Fabric feature in Dataverse. This establishes OneLake shortcuts to tables in Dataverse. The Link to Fabric features establishes a managed private channel between OneLake and Dataverse.</p>
+</li>
+<li>
+<p>Azure DevOps uses agent pools to communicate over Https (443) through the Microsoft Network Backbone to Fabric REST APIs.</p>
+</li>
+<li>
+<p>Fabric Capacities are billing resources in Azure. There is no network traffic in this link. This capacity is used for billing purposes only.</p>
+</li>
+<li>
+<p>Azure services and data sources that support managed private endpoints to Fabric can be connected to Fabric using managed private endpoints. These private endpoints establish a secure and private communication channel from Fabric to the Azure resources. This communication is outbound from Fabric to Azure. Here are the supported sources.</p>
+</li>
+<li>
+<p>Azure services and data sources that do not support managed private endpoints can still communicate private with Fabric through the managed VNET Data Gateway.</p>
+</li>
+</ol>
+<p>There are a lot of details within each of these integration points. In future articles I will provide deeper dives into each of the integration points.</p></div>
+      </article>
+    </main>
+    <footer>
+      <span>&copy; 2026 Mohamed Amin</span>
+      <nav aria-label="Social links">
+        <a href="https://www.linkedin.com/in/modamin/">LinkedIn</a>
+        <a href="https://www.github.com/modamin">GitHub</a>
+        <a href="../blog.html">Blog</a>
+      </nav>
+    </footer>
+  </div>
+  <script>
     (() => {
       const root = document.documentElement;
       const button = document.querySelector('.toggle');
