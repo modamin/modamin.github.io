@@ -4,5 +4,5 @@ I build enterprise data platforms from the ground up, migrate legacy and on-prem
 
 ![alt text](assets/index/image.png)
 
-[Sample Blog Post](/posts/post)
-[Sample Post 2](posts/post-2.md)
+- [Sample Blog Post](/posts/post)
+- [Sample Post 2](posts/post-2.md)
