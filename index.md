@@ -2,7 +2,6 @@ I'm a data architect & consultant with over 15 years of experience spanning soft
 
 I build enterprise data platforms from the ground up, migrate legacy and on-prem data warehouses into the cloud, and stand up self-serve analytics that open data up across the broader organization. I work hands-on across data engineering, data architecture, and data governance, and design for the strict security and compliance that regulated environments demand. I also enable the teams behind these platforms, training data professionals to run and build on them themselves.
 
-![alt text](assets/index/image.png)
 
 - [Sample Blog Post](/posts/post)
 - [Sample Post 2](posts/post-2.md)
