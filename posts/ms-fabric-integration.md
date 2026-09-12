@@ -2,7 +2,8 @@
 
 This article describes the integration points between Microsoft Fabric and other services such as on-premises data sources, Power Apps, Azure DevOps and Azure services and data sources.
 
-![](assets/ms-fabric-integration-image-1.png)
+![](../assets/ms-fabric-integration-1.png)
+
 ### Integration points
 
 1. Users, developers, and admins are authenticated through Microsoft Entra. At the time of authentication, an Entra Conditional Access Policies are applied. These policies include Multi-Factor Authentication (MFA) policies, device locations, IP range, and other signals.
