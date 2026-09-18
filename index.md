@@ -2,6 +2,3 @@ I'm a Data Architect and Consultant. I help companies build enterprise data solu
 
 You can reach me on [LinkedIn](https://linkedin.com/in/modamin)
 
-### Posts
-
-- [Microsoft Fabric Integration](posts/ms-fabric-integration.md)
